@@ -16,7 +16,7 @@
         "data": {
           "url": "https://raw.githubusercontent.com/David1284/FIT3179/main/csvData.csv"
         },
-        "key": "Country",
+        "key": "name",
         "fields": ["total"]
       }
     },
@@ -35,7 +35,7 @@
       "scale": {"type": "log"}
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "properties.NAME", "type": "nominal", "title": "name"},
       {"field": "total", "type": "quantitative"}
     ]
   }
