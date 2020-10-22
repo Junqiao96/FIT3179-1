@@ -41,19 +41,19 @@ Macau,84.296,81.334,87.23
 Taiwan,80.53,77.884,83.262
 Colombia,77.36,74.61,80.084
 Comoros,64.4,62.658,66.208
-Republic of the Congo,64.58,63.088,66.034
+Dem. Rep. Congo,64.58,63.088,66.034
 Costa Rica,80.376,77.87,82.952
-Ivory Coast,57.844,56.642,59.194
+Côte d'Ivoire,57.844,56.642,59.194
 Croatia,78.558,75.386,81.642
 Cuba,78.886,76.932,80.85
 Curacao,78.942,75.856,81.684
 Cyprus,81.054,79.01,83.084
 Czech Republic,79.43,76.82,81.996
 North Korea,72.332,68.684,75.8
-DR Congo,60.766,59.224,62.328
+Congo,60.766,59.224,62.328
 Denmark,80.968,79.03,82.916
 Djibouti,67.072,65.084,69.308
-Dominican Republic,74.146,71.064,77.432
+Dominican Rep.,74.146,71.064,77.432
 Ecuador,77.104,74.39,79.916
 Egypt,72.06,69.804,74.428
 El Salvador,73.418,68.574,77.916
@@ -166,7 +166,7 @@ Slovenia,81.388,78.654,84.086
 Solomon Islands,73.014,71.306,74.896
 Somalia,57.5,55.822,59.24
 South Africa,64.124,60.728,67.652
-South Sudan,57.948,56.454,59.488
+S. Sudan,57.948,56.454,59.488
 Spain,83.612,80.868,86.302
 Sri Lanka,77.056,73.692,80.326
 Palestine,74.14,72.488,75.852
@@ -189,15 +189,17 @@ Ukraine,72.092,67.122,76.886
 United Arab Emirates,78.034,77.352,79.374
 United Kingdom,81.398,79.71,83.052
 Tanzania,65.46,63.632,67.26
-United States,78.93,76.424,81.464
+United States of America,78.93,76.424,81.464
 United States Virgin Islands,80.654,78.052,83.148
 Uruguay,77.986,74.222,81.532
 Uzbekistan,71.734,69.566,73.882
 Vanuatu,70.546,69.034,72.24
 Venezuela,72.214,68.476,76.148
 Vietnam,75.47,71.388,79.58
-Western Sahara,70.348,68.688,72.398
+W. Sahara,70.348,68.688,72.398
 World,72.632,70.276,75.068
 Yemen,66.194,64.504,67.902
 Zambia,63.836,60.82,66.816
 Zimbabwe,61.362,59.652,62.796
+Greenland,0,0,0
+Antarctica,0,0,0
