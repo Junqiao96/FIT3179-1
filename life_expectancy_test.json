@@ -15,11 +15,11 @@
  "data": {
  "url": "https://raw.githubusercontent.com/David1284/FIT3179/main/csvData.csv"
  },
- "key": "name",
- "fields": ["total"]
+ "key": ""name"",
+ "fields": [""total""]
   }
  },
- {"calculate": "datum.total + 0.1", "as": "Life Expectancy"}
+ {"calculate": "datum."total" + 0.1", "as": "Life Expectancy"}
  ],
  "mark": {"type": "geoshape"},
  "encoding": {
@@ -29,8 +29,8 @@
  "scale": {"type": "log"}
  },
  "tooltip": [
- {"field": "properties.NAME", "type": "nominal", "title": "name"},
- {"field": "total", "type": "quantitative"}
+ {"field": "properties.NAME", "type": "nominal", "title": ""name""},
+ {"field": ""total"", "type": "quantitative"}
  ]
  }
 }
