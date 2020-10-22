@@ -13,13 +13,13 @@
  "lookup": "properties.NAME",
  "from": {
  "data": {
- "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
+ "url": "https://raw.githubusercontent.com/David1284/FIT3179/main/csvData.csv"
  },
- "key": "Country",
- "fields": ["Active"]
+ "key": "name",
+ "fields": ["total"]
   }
  },
- {"calculate": "datum.Active + 0.1", "as": "Life Expectancy"}
+ {"calculate": "datum.total + 0.1", "as": "Life Expectancy"}
  ],
  "mark": {"type": "geoshape"},
  "encoding": {
@@ -29,8 +29,8 @@
  "scale": {"type": "log"}
  },
  "tooltip": [
- {"field": "properties.NAME", "type": "nominal", "title": "Country"},
- {"field": "Active", "type": "quantitative"}
+ {"field": "properties.NAME", "type": "nominal", "title": "name"},
+ {"field": "total", "type": "quantitative"}
  ]
  }
 }
