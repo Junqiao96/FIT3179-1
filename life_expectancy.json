@@ -32,7 +32,7 @@
     "color": {
       "field": "Life_expectancy",
       "type": "quantitative",
-      "scale": {"type": "log"}
+      "scale": {"type": "linear"}
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
