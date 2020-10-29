@@ -1,3 +1,4 @@
+  
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Life Expectancy of people in countries around the world",
@@ -14,7 +15,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/David1284/FIT3179/main/Life_expectancy.csv"
+          "url": "https://raw.githubusercontent.com/David1284/FIT3179/main/Data/life_expectancy.csv"
         },
         "key": "Country",
         "fields": ["Life expectancy"]
