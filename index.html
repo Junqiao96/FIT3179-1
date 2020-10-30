@@ -37,28 +37,29 @@
             <div class="pure-g">
                 <div class="pure-u-1-4">
                     <img class="pure-img-responsive" src="https://images.unsplash.com/photo-1527099908998-5b73a5fe2a0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80" width="400" height="300" alt="photo of tobbaco">
-                </div>
-            <h2 class="content-subhead">Try Resizing your Browser</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+                </div>  
         </div>
     </div>
 
 </head>
 <body>
 
-<h1>An Example of Multiple Visualisations</h1>
 
 <h2>This is the first visualisation</h2>
 <div id="choropleth_map"></div>
+<div class="content">
+     <p>
+       Tobacco smoking is one of the world’s largest health problems. Over the course of the 20th century, it killed around 100 million people, most of them in today’s rich countries.5 The health burdens of smoking are now moving from high-income to low-to-middle income countries; some estimates have suggest that one billion people could die from tobacco over the 21st century.
+     </p>
+</div>
+
 
 <h2>This is the second visualisation</h2>
 <div id="scatter_plot"></div>
 
 <script type="text/javascript">
   
-  var vis1 = "json/life_expectancy.json";
+  var vis1 = "json/life_expectancy.json"; width = "500" 
   
   vegaEmbed('#choropleth_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
