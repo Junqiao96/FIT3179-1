@@ -38,10 +38,6 @@
                 <div class="pure-u-1-4">
                     <img class="pure-img-responsive" src="https://images.unsplash.com/photo-1527099908998-5b73a5fe2a0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80" width="400" height="300" alt="photo of tobbaco">
                 </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
-            </div>
-
             <h2 class="content-subhead">Try Resizing your Browser</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -62,13 +58,13 @@
 
 <script type="text/javascript">
   
-  var vis1 = "js/choropleth_map.vg.json";
+  var vis1 = "json/life_expectancy.json";
   
   vegaEmbed('#choropleth_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var vis2 = "js/scatter_plot_interactive.vg.json";
+  var vis2 = "Cigarette_consumption/js/cigarette_consumption_interactive.vg.json";
   
   vegaEmbed('#scatter_plot', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
