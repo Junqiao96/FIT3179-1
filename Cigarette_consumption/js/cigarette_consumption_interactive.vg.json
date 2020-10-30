@@ -4,7 +4,7 @@
  "height": 400,
  "title": "Relationship between cigarette consumption and life expectancy",
  "data": {
- "url": "https://raw.githubusercontent.com/David1284/FIT3179/main/Cigarette_consumption/data/Life_expectancy_cigarette_consumption.csv"
+ "url": "https://raw.githubusercontent.com/David1284/FIT3179/main/Cigarette_consumption/data/Life_expectancy_cigarette.csv"
  },
  "mark": "circle",
  "encoding": {
@@ -22,7 +22,7 @@
   "scale": {"type": "linear", "domain": [40, 90]}
  },
  "color": {
- "field": "Continent",
+ "field": "Continent ",
  "type": "nominal"
  },
  "size": {
@@ -36,7 +36,7 @@
 },
  "tooltip": [
  {"field": "Country", "type": "nominal"},
-  {"field": "Continent", "type": "nominal"},
+  {"field": "Continent ", "type": "nominal"},
  {"field": "Cigarette consumption", "type": "quantitative", "format": ".2f"},
  {"field": "Life expectancy", "type": "quantitative", "format": ".2f", "title": "Average life expectancy"},
  {"field": "male", "type": "quantitative", "format": ".2f", "title": "Female life expectancy"},
