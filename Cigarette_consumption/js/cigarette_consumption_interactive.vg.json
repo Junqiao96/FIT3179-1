@@ -36,6 +36,7 @@
 },
  "tooltip": [
  {"field": "Country", "type": "nominal"},
+  {"field": "Continent", "type": "nominal"},
  {"field": "Cigarette consumption", "type": "quantitative", "format": ".2f"},
  {"field": "Life expectancy", "type": "quantitative", "format": ".2f", "title": "Average life expectancy"},
  {"field": "male", "type": "quantitative", "format": ".2f", "title": "Female life expectancy"},
