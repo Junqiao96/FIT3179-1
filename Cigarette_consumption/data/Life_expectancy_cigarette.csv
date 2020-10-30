@@ -1,4 +1,4 @@
-﻿Country,Continent ,Life expectancy,Cigarette consumption,male,female
+﻿Country,Continent ,Life_expectancy,Cigarette_consumption,male,female
 Afghanistan,Asia ,64.956,311.6025362,63.498,66.522
 Albania,Europe,78.612,2491.599232,77.03,80.252
 Algeria,Africa,76.954,1046.66874,75.754,78.208
