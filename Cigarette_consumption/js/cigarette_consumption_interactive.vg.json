@@ -6,27 +6,82 @@
  "data": {
  "url": "https://raw.githubusercontent.com/David1284/FIT3179/main/Cigarette_consumption/data/Life_expectancy_cigarette.csv"
  },
+
+ "params": [
+  {
+ "name": "Life_expec",
+ "value": 0,
+ "bind": {
+ "input": "range",
+ "min": 0,
+ "max": 100000000,
+ "step": 1000000,
+ "name": "Cigarette consumption: "
+ }
+ },
+ {
+ "name": "Continent_selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "North America",
+ "South America",
+ "Europe",
+ "Africa",
+ "Asia",
+ "Oceania"
+ ],
+ "labels":[
+ "Show All",
+ "North America",
+ "South America",
+ "Europe",
+ "Africa",
+ "Asia",
+ "Oceania"
+ ],
+ "name": "Continent: "
+ }
+ }
+ ],
+ "transform": [
+   {"filter": "Continent_selection == null || datum.Continent == Continent_selection"}
+ ],
+ "selection": {
+ "continent_highlight": {
+ "type": "multi",
+ "fields": ["Continent"],
+ "bind": "legend"
+ }
+ },
+
+
+
  "mark": "circle",
  "encoding": {
  "x": {
- "field": "Cigarette consumption",
+ "field": "Cigarette_consumption",
  "type": "quantitative",
  "title": "Cigarette consumption",
  "axis": {"tickCount": 4},
  "scale": {"type": "log", "domain": [1, 10000]}
  },
  "y": {
- "field": "Life expectancy",
+ "field": "Life_expectancy",
  "type": "quantitative",
  "axis": {"tickCount": 4},
   "scale": {"type": "linear", "domain": [40, 90]}
  },
+ 
  "color": {
  "field": "Continent ",
  "type": "nominal"
  },
+ "opacity":{"value": 0.8
+ },
  "size": {
-   "field": "Cigarette consumption",
+   "field": "Cigarette_consumption",
 "scale": {
  "type": "threshold",
  "domain": [1000,3000,6000],
@@ -37,10 +92,11 @@
  "tooltip": [
  {"field": "Country", "type": "nominal"},
   {"field": "Continent ", "type": "nominal"},
- {"field": "Cigarette consumption", "type": "quantitative", "format": ".2f"},
- {"field": "Life expectancy", "type": "quantitative", "format": ".2f", "title": "Average life expectancy"},
+ {"field": "Cigarette_consumption", "type": "quantitative", "format": ".2f"},
+ {"field": "Life_expectancy", "type": "quantitative", "format": ".2f", "title": "Average life expectancy"},
  {"field": "male", "type": "quantitative", "format": ".2f", "title": "Female life expectancy"},
  {"field": "female", "type": "quantitative", "format": ".2f", "title": "male life expectancy"}
  ]
  }
+
 }
