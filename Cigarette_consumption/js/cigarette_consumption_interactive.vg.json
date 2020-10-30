@@ -22,7 +22,7 @@
   "scale": {"type": "linear", "domain": [40, 90]}
  },
  "color": {
- "field": "Country",
+ "field": "Continent",
  "type": "nominal"
  },
  "size": {
