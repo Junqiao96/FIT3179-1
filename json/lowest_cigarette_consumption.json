@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 400,
+  "data": {
+    "values": [
+      {"name": "Peru", "count": 97.69},
+      {"name": "Rwanda", "count": 93.99},
+      {"name": "Ecuador", "count": 93.49},
+      {"name": "India", "count": 89.28},
+      {"name": "Antigua and Barbuda", "count": 89.21},
+      {"name": "Ghana", "count": 40.54},
+      {"name": "Mauritiana", "count": 30.26},
+      {"name": "Guinea-Bissau", "count": 25.27},
+      {"name": "Brunei", "count": 9.68}
+    ]
+  },
+  "encoding": {
+    "y": {"field": "name", "type": "nominal", "sort": "-x", "title": null},
+    "x": {"field": "count", "type": "quantitative", "title": null}
+  },
+  "layer": [{
+    "mark": "bar",
+    "encoding": {
+      "color": {
+        "field": "count",
+        "type": "quantitative",
+        "title": "Cigarettes consumption"
+      }
+    }
+  }, {
+    "mark": {
+      "type": "text",
+      "align": "right",
+      "xOffset": -4,
+      "aria": false
+    }
+  }]
+}
