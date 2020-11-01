@@ -63,6 +63,18 @@
  Tobacco smoking is one of the world’s largest health problems. Over the course of the 20th century, it killed around 100 million people, most of them in today’s rich countries.5 The health burdens of smoking are now moving from high-income to low-to-middle income countries; some estimates have suggest that one billion people could die from tobacco over the 21st century.
 </p>
      
+     
+<h4>Death Rates caused by Tobacco Consumption</h3>
+<p>
+ Tobacco smoking is one of the world’s largest health problems. Over the course of the 20th century, it killed around 100 million people, most of them in today’s rich countries.5 The health burdens of smoking are now moving from high-income to low-to-middle income countries; some estimates have suggest that one billion people could die from tobacco over the 21st century.
+</p>
+<div id="choropleth_map3"></div>
+&ensp;
+<p>
+ Tobacco smoking is one of the world’s largest health problems. Over the course of the 20th century, it killed around 100 million people, most of them in today’s rich countries.5 The health burdens of smoking are now moving from high-income to low-to-middle income countries; some estimates have suggest that one billion people could die from tobacco over the 21st century.
+</p>
+     
+     
 <script type="text/javascript">
   
   var vis1 = "json/life_expectancy.json";  
@@ -82,7 +94,16 @@
   vegaEmbed('#choropleth_map2', vis3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+     
+     
+  var vis4 = "json/Death_rate.json";  
+  
+  vegaEmbed('#choropleth_map3', vis4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+     
 </script>
+     
 
 </body>
 </html>
