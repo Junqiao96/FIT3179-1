@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Deaths caused by Tobacco consumption",
+  "title": "World Happiness Index",
   "width": 600,
   "height": 400,
   "data": {
@@ -14,29 +14,32 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/David1284/FIT3179/main/Data/death-rate-smoking%20(1).csv"
+          "url": "https://raw.githubusercontent.com/Junqiao96/FIT3179/main/vegalite/data/2018.csv"
         },
-        "key": "Country",
-        "fields": ["Deaths"]
+        "key": "Country or region",
+        "fields": ["Score","Freedom to make life choices","GDP per capita","Social support","Healthy life expectancy"]
       }
     },
-    {"calculate": "datum['Deaths'] ", "as": "Deaths"}
+    {"calculate": "datum['Score'] ", "as": "Score"}
   ],
   "projection": {
     "type": "equirectangular"
   },
   "mark": {
-    "type": "geoshape"
+    "type": "geoshape",
+    "stroke": "white"
     },
   "encoding": {
     "color": {
-      "field": "Deaths",
+      "field": "Score",
       "type": "quantitative",
       "scale": {"type": "linear"}
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Deaths", "type": "quantitative"}
+      {"field": "properties.NAME", "type": "nominal", "title": "Country or region"},
+      {"field": "Score", "type": "quantitative"},
+      {"field": "GDP per capita", "type": "quantitative"},{"field": "Social support", "type": "quantitative"},{"field": "Healthy life expectancy", "type": "quantitative","title":"Life Expectancy"},
+      {"field": "Freedom to make life choices", "type": "quantitative","title":"Free choice"}
     ]
   }
 
